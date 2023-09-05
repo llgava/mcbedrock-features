@@ -32,6 +32,6 @@ export class Feature {
     const rawDocs = fs.readFileSync('./docs.json');
     const docs = JSON.parse(rawDocs);
 
-    return docs[this.identifier] || 'No description found.';
+    return docs[this.identifier] || '';
   }
 }
