@@ -9,7 +9,6 @@ export class Feature {
     this.type = this.getFeatureType();
     this.identifier = this.mountIdentifier();
     this.version = path.dirname(this.path);
-    this.lastVersion = '?';
     this.description = this.mountDescription();
 
     this.MDLink = this.mountMarkdownLink();

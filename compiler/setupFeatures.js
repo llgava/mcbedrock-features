@@ -26,8 +26,6 @@ export async function setupFeatures(table) {
     table.push([
       feature.MDLink,
       feature.version,
-      feature.lastVersion,
-      feature.type,
       feature.description
     ]);
   });

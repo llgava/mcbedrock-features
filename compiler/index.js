@@ -2,9 +2,9 @@ import { markdownTable } from 'markdown-table';
 
 import { setupFeatures } from './setupFeatures.js';
 
-const table = [['Feature', 'Added Version', 'Last Version', 'Feature Type', 'Description']]
+const table = [['Feature', 'Added Version', , 'Description']]
 const tableConfig = {
-  align: ['l', 'c', 'c']
+  align: ['l', 'c']
 }
 
 await setupFeatures(table);
