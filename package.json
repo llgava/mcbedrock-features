@@ -1,0 +1,21 @@
+{
+  "name": "mcbedrock-features",
+  "version": "1.0.0",
+  "description": "All Minecraft Bedrock features in one place.",
+  "main": "compiler/index.js",
+  "repository": "git@github.com:llgava/mcbedrock-features.git",
+  "author": "Leonardo Luiz Gava <llgavamt@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node ."
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0"
+  },
+  "dependencies": {
+    "glob": "^10.3.4",
+    "json5": "^2.2.3",
+    "markdown-table": "^3.0.3"
+  }
+}
