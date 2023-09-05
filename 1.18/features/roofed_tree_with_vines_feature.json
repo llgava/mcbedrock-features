@@ -8,7 +8,10 @@
       "trunk_width": 2,
       "trunk_height": {
         "base": 6,
-        "intervals": [ 3, 2 ]
+        "intervals": [
+          3,
+          2
+        ]
       },
       "trunk_block": {
         "name": "minecraft:log2",
@@ -86,7 +89,6 @@
       "minecraft:dirt_with_roots",
       "minecraft:moss_block",
       "minecraft:mycelium",
-      // Block aliases sure would be sweet
       {
         "name": "minecraft:dirt",
         "states": {

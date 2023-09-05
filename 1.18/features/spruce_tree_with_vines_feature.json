@@ -21,7 +21,7 @@
       },
       "trunk_decoration": {
         "decoration_block": "minecraft:vine",
-        "decoration_chance": 100.0
+        "decoration_chance": 100
       }
     },
     "spruce_canopy": {

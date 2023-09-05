@@ -4,14 +4,17 @@ import path from 'path';
 export class Feature {
   constructor(data, featurePath) {
     this.data = data;
-    this.path = featurePath.replace('\\features', '');
+    this.path = featurePath;
+    this.parsedPath = this.path.replace('\\features', '');
 
     this.type = this.getFeatureType();
     this.identifier = this.mountIdentifier();
-    this.version = path.dirname(this.path);
+    this.version = path.dirname(this.parsedPath);
     this.description = this.mountDescription();
 
     this.MDLink = this.mountMarkdownLink();
+
+    this.formatFeatureFile();
   }
 
   getFeatureType() {
@@ -24,7 +27,7 @@ export class Feature {
   }
 
   mountMarkdownLink() {
-    const file = path.basename(this.path);
+    const file = path.basename(this.parsedPath);
     return `[${this.identifier}](latest/features/${file})`;
   }
 
@@ -33,5 +36,11 @@ export class Feature {
     const docs = JSON.parse(rawDocs);
 
     return docs[this.identifier] || '';
+  }
+
+  formatFeatureFile() {
+    const formattedJSON = JSON.stringify(this.data, null, 2);
+
+    fs.writeFileSync(this.path, formattedJSON, 'utf-8');
   }
 }

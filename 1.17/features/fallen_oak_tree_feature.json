@@ -18,7 +18,7 @@
       "log_decoration_feature": "minecraft:optional_log_mushrooms_feature",
       "trunk_decoration": {
         "decoration_block": "minecraft:vine",
-        "decoration_chance": 75.0
+        "decoration_chance": 75
       }
     },
     "base_block": [
@@ -36,7 +36,6 @@
       "minecraft:podzol",
       "minecraft:dirt_with_roots",
       "minecraft:moss_block",
-      // Block aliases sure would be sweet
       {
         "name": "minecraft:dirt",
         "states": {

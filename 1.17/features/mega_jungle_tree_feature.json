@@ -8,7 +8,10 @@
       "trunk_width": 2,
       "trunk_height": {
         "base": 10,
-        "intervals": [ 3, 20 ]
+        "intervals": [
+          3,
+          20
+        ]
       },
       "trunk_block": {
         "name": "minecraft:log",
@@ -32,7 +35,7 @@
         },
         "branch_altitude_factor": {
           "min": 0.5,
-          "max": 1.0
+          "max": 1
         },
         "branch_canopy": {
           "mega_canopy": {

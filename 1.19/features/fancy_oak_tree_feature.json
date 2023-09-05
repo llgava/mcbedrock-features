@@ -19,10 +19,10 @@
       },
       "branches": {
         "slope": 0.381,
-        "density": 1.0,
+        "density": 1,
         "min_altitude_factor": 0.2
       },
-      "width_scale": 1.0,
+      "width_scale": 1,
       "foliage_altitude_factor": 0.3
     },
     "fancy_canopy": {
@@ -50,7 +50,6 @@
       "minecraft:mycelium",
       "minecraft:mud",
       "minecraft:muddy_mangrove_roots",
-      // Block aliases sure would be sweet
       {
         "name": "minecraft:dirt",
         "states": {

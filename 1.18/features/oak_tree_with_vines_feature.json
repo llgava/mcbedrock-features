@@ -16,7 +16,7 @@
         }
       },
       "trunk_decoration": {
-        "decoration_chance": 100.0,
+        "decoration_chance": 100,
         "decoration_block": "minecraft:vine"
       }
     },
@@ -66,7 +66,6 @@
       "minecraft:dirt_with_roots",
       "minecraft:moss_block",
       "minecraft:mycelium",
-      // Block aliases sure would be sweet
       {
         "name": "minecraft:dirt",
         "states": {
