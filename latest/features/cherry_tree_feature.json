@@ -1,0 +1,86 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:tree_feature": {
+    "description": {
+      "identifier": "minecraft:cherry_tree_feature"
+    },
+    "cherry_trunk": {
+      "trunk_block": "minecraft:cherry_log",
+      "trunk_height": {
+        "base": 7,
+        "intervals": [ 1 ]
+      },
+      "branches": {
+        "tree_type_weights": {
+          "one_branch": 10,
+          "two_branches": 10,
+          "two_branches_and_trunk": 10
+        },
+        "branch_horizontal_length": {
+          "range_min": 2,
+          "range_max": 4
+        },
+        "branch_start_offset_from_top": {
+          "range_min": -4,
+          "range_max": -3
+        },
+        "branch_end_offset_from_top": {
+          "range_min": -1,
+          "range_max": 0
+        },
+        "branch_canopy": {
+          "cherry_canopy": {
+            "leaf_block": "minecraft:cherry_leaves",
+            "height": 5,
+            "radius": 4,
+            "wide_bottom_layer_hole_chance": 25,
+            "corner_hole_chance": 50,
+            "hanging_leaves_chance": 16.6666,
+            "hanging_leaves_extension_chance": 33.3333
+          }
+        }
+      }
+    },
+    "cherry_canopy": {
+      "leaf_block": "minecraft:cherry_leaves",
+      "height": 5,
+      "radius": 4,
+      "wide_bottom_layer_hole_chance": 25,
+      "corner_hole_chance": 50,
+      "hanging_leaves_chance": 16.6666,
+      "hanging_leaves_extension_chance": 33.3333
+    },
+    // Kinds of blocks the tree can be placed on.
+    // We want all kinds of "dirt" blocks: dirt, grass, podzol, mud, etc.
+    "may_grow_on": [
+      {
+        "tags": "query.any_tag('dirt')"
+      }
+    ],
+    // Whatever kind of "dirt" the tree gets planted on, it will be replaced
+    // by an actual Dirt block if it isn't one already.
+    // NOTE: Coarse Dirt is a state of Dirt, so it will stay as Coarse Dirt.
+    "base_block": [
+      "minecraft:dirt"
+    ],
+    // This is used when checking the volume the tree is going to be placed on.
+    // Dirt around the placement area doesn't block the tree from being created.
+    "may_grow_through": [
+      {
+        "tags": "query.any_tag('dirt')"
+      }
+    ],
+    // This is used when actually building the tree (trunk and foliage).
+    // Air and leaves (and snow on leaves) can be replaced.
+    "may_replace": [
+      "minecraft:air",
+      // Sadly no tags for leaves yet
+      "minecraft:leaves",
+      "minecraft:leaves2",
+      "minecraft:azalea_leaves",
+      "minecraft:azalea_leaves_flowered",
+      "minecraft:mangrove_leaves",
+      "minecraft:snow_layer"
+    ]
+  }
+}
