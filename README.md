@@ -121,7 +121,7 @@ All features are saved according to the Major version of the game, that is, feat
 
 ## Contributors
 <a href="https://github.com/llgava/neelix/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=llgava/neelix" />
+  <img src="https://contrib.rocks/image?repo=llgava/mcbedrock-features" />
 </a>
 
 ### Contact
