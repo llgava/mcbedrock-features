@@ -7,6 +7,7 @@ All features are saved according to the Major version of the game, that is, feat
 > [!NOTE]
 > There are many features to understand how it works, contributions to have a complete documentation are very welcome! <br /><br />Keep in mind that the description is about the feature and what it represents, if something is related to its feature rule, it should not be written.
 
+## Vanilla Features
 | Feature                                                                                                                               | Added Version | Description                  |
 | :------------------------------------------------------------------------------------------------------------------------------------ | :-----------: | ---------------------------- |
 | [minecraft:amethyst_geode_feature](latest/features/amethyst_geode_feature.json)                                                       |      1.17     | Generates an amethyst geode. |
