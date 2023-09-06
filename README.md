@@ -11,7 +11,6 @@ All features are saved according to the Major version of the game, that is, feat
 ## Vanilla Features
 | Feature                                                                                                                               | Added Version | Description                                                           |
 | :------------------------------------------------------------------------------------------------------------------------------------ | :-----------: | --------------------------------------------------------------------- |
-| Feature                                                                                                                               | Added Version | Description                                                           |
 | [minecraft:amethyst_geode_feature](latest/features/amethyst_geode_feature.json)                                                       |      1.17     | Generates an amethyst geode.                                          |
 | [minecraft:azalea_root_system_snap_to_ceiling_feature](latest/features/azalea_root_system_snap_to_ceiling_feature.json)               |      1.17     | Generates a ceiling with Rooted Dirt and Hanging Roots on Lush Caves. |
 | [minecraft:azalea_tree_feature](latest/features/azalea_tree_feature.json)                                                             |      1.17     | Generates an Azalea tree.                                             |
@@ -20,7 +19,7 @@ All features are saved according to the Major version of the game, that is, feat
 | [minecraft:big_dripleaf_south_feature](latest/features/big_dripleaf_south_feature.json)                                               |      1.17     | Places a Big Dripleaf facing south.                                   |
 | [minecraft:big_dripleaf_west_feature](latest/features/big_dripleaf_west_feature.json)                                                 |      1.17     | Places a Big Dripleaf facing west.                                    |
 | [minecraft:birch_tree_feature](latest/features/birch_tree_feature.json)                                                               |      1.17     | Generates an Birch tree.                                              |
-| [minecraft:cave_vine_feature](latest/features/cave_vine_feature.json)                                                                 |      1.17     |                                                                       |    
+| [minecraft:cave_vine_feature](latest/features/cave_vine_feature.json)                                                                 |      1.17     |                                                                       |
 | [minecraft:cave_vine_in_moss_feature](latest/features/cave_vine_in_moss_feature.json)                                                 |      1.17     |                                                                       |    
 | [minecraft:cave_vine_snap_to_ceiling_feature](latest/features/cave_vine_snap_to_ceiling_feature.json)                                 |      1.17     |                                                                       |    
 | [minecraft:clay_ore_feature](latest/features/clay_ore_feature.json)                                                                   |      1.17     |                                                                       |    
@@ -117,9 +116,9 @@ All features are saved according to the Major version of the game, that is, feat
 | [minecraft:tall_mangrove_tree_feature](latest/features/tall_mangrove_tree_feature.json)                                               |      1.19     |                                                                       |    
 | [minecraft:tall_mangrove_tree_with_beenest_feature](latest/features/tall_mangrove_tree_with_beenest_feature.json)                     |      1.19     |                                                                       |    
 | [minecraft:cherry_tree_feature](latest/features/cherry_tree_feature.json)                                                             |      1.20     |                                                                       |    
-| [minecraft:cherry_tree_with_beehive_feature](latest/features/cherry_tree_with_beehive_feature.json)                                   |      1.20     |                                                                       |
+| [minecraft:cherry_tree_with_beehive_feature](latest/features/cherry_tree_with_beehive_feature.json)                                   |      1.20     |                                                                       |    
 | [minecraft:pink_petals_scatter_feature](latest/features/pink_petals_scatter_feature.json)                                             |      1.20     |                                                                       |    
-| [minecraft:random_cherry_tree_feature](latest/features/random_cherry_tree_feature.json)                                               |      1.20     |                                                                       |
+| [minecraft:random_cherry_tree_feature](latest/features/random_cherry_tree_feature.json)                                               |      1.20     |                                                                       | 
 
 ## Contributors
 <a href="https://github.com/llgava/mcbedrock-features/graphs/contributors">
