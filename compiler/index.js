@@ -8,5 +8,7 @@ const tableConfig = {
 }
 
 await setupFeatures(table);
+table.unshift(['Feature', 'Added Version', 'Description']);
 
 const md = markdownTable(table, tableConfig);
+console.log(md);
