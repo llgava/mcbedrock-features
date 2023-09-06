@@ -1,13 +1,13 @@
 import { markdownTable } from 'markdown-table';
 
-import { setupFeatures } from './setupFeatures.js';
+import { collectFeatures } from './collectFeatures.js';
 
 const table = []
 const tableConfig = {
   align: ['l', 'c']
 }
 
-await setupFeatures(table);
+await collectFeatures(table);
 table.unshift(['Feature', 'Added Version', 'Description']);
 
 const md = markdownTable(table, tableConfig);

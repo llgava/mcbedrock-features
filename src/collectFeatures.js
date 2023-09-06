@@ -1,38 +1,43 @@
+import { glob } from 'glob';
 import fs from 'fs';
-import path from 'path';
+import JSON5 from 'json5';
 
-export class Feature {
-  constructor(data, featurePath) {
-    this.data = data;
-    this.path = featurePath;
-    this.parsedPath = this.path.replace('\\features', '');
+import { Feature } from './feature.js';
 
-    this.type = this.getFeatureType();
-    this.identifier = this.mountIdentifier();
-    this.version = path.dirname(this.parsedPath);
-    this.description = this.mountDescription();
+const ignoredFiles = [
+  "**/node_modules/**",
+  "**/feature_rules/*.json",
+  "docs.json",
+  "package.json"
+];
 
-    this.MDLink = this.mountMarkdownLink();
-  }
+export async function collectFeatures(table) {
+  const files = await glob('**/*.json', { ignore: ignoredFiles });
+  const addedFeatures = []
 
-  getFeatureType() {
-    const props = Object.keys(this.data);
-    return props[1];
-  }
+  files.sort((x, y) => x.localeCompare(y));
 
-  mountIdentifier() {
-    return this.data[this.type].description.identifier;
-  }
+  files.forEach((file) => {
+    const rawData = fs.readFileSync(file);
+    const data = JSON5.parse(rawData);
 
-  mountMarkdownLink() {
-    const file = path.basename(this.parsedPath);
-    return `[${this.identifier}](latest/features/${file})`;
-  }
+    formatFeatureFile(data, file);
 
-  mountDescription() {
-    const rawDocs = fs.readFileSync('./docs.json');
-    const docs = JSON.parse(rawDocs);
+    if (file.includes('latest')) return;
+    const feature = new Feature(data, file);
 
-    return docs[this.identifier] || '';
-  }
+    if (addedFeatures.includes(feature.identifier)) return;
+
+    addedFeatures.push(feature.identifier);
+    table.push([
+      feature.MDLink,
+      feature.version,
+      feature.description
+    ]);
+  });
+}
+
+function formatFeatureFile(data, path) {
+  const formattedJSON = JSON.stringify(data, null, 2);
+  fs.writeFileSync(path, formattedJSON, 'utf-8');
 }
