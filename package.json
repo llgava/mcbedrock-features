@@ -2,7 +2,7 @@
   "name": "mcbedrock-features",
   "version": "1.0.0",
   "description": "All Minecraft Bedrock features in one place.",
-  "main": "compiler/index.js",
+  "main": "src/index.js",
   "repository": "git@github.com:llgava/mcbedrock-features.git",
   "author": "Leonardo Luiz Gava <llgavamt@gmail.com>",
   "license": "MIT",
