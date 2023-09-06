@@ -3,7 +3,7 @@
 
 Since Microsoft does not share the feature files easily, here you will find exactly all the features responsible for setting the world in Minecraft Bedrock Edition.
 
-All features are saved according to the Major version of the game, that is, feature updates that occur in Minor versions are updated in the repository as well. Version history is not maintained for outdated features.
+All features are saved according to the Major version of the game, that is, feature updates that occur in Minor versions are updated in the repository as well. Version history is not maintained for outdated features unless updated in another Major version.
 
 > [!NOTE]
 > There are many features to understand how it works, contributions to have a complete documentation are very welcome! <br /><br />Keep in mind that the description is about the feature and what it represents, if something is related to its feature rule, it should not be written.
