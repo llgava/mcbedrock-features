@@ -7,15 +7,24 @@
     "iterations": 24,
     "coordinate_eval_order": "zyx",
     "x": {
-      "extent": [ -8, 8 ],
+      "extent": [
+        -8,
+        8
+      ],
       "distribution": "triangle"
     },
     "z": {
-      "extent": [ -8, 8 ],
+      "extent": [
+        -8,
+        8
+      ],
       "distribution": "triangle"
     },
     "y": {
-      "extent": [ -4, 4 ],
+      "extent": [
+        -4,
+        4
+      ],
       "distribution": "triangle"
     },
     "project_input_to_floor": false,

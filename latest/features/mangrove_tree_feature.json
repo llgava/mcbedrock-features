@@ -48,7 +48,7 @@
         "name": "minecraft:mangrove_log"
       },
       "branches": {
-        "branch_chance": 100.0,
+        "branch_chance": 100,
         "branch_length": {
           "range_min": 0,
           "range_max": 1
@@ -64,7 +64,10 @@
       "canopy_radius": 3,
       "leaf_placement_attempts": 70,
       "leaf_blocks": [
-        ["minecraft:mangrove_leaves", 1]
+        [
+          "minecraft:mangrove_leaves",
+          1
+        ]
       ],
       "canopy_decoration": {
         "decoration_block": "minecraft:vine",

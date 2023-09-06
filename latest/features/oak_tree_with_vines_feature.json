@@ -16,7 +16,7 @@
         }
       },
       "trunk_decoration": {
-        "decoration_chance": 100.0,
+        "decoration_chance": 100,
         "decoration_block": "minecraft:vine"
       }
     },
@@ -68,7 +68,6 @@
       "minecraft:mycelium",
       "minecraft:mud",
       "minecraft:muddy_mangrove_roots",
-      // Block aliases sure would be sweet
       {
         "name": "minecraft:dirt",
         "states": {

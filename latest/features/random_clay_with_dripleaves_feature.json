@@ -5,8 +5,14 @@
       "identifier": "minecraft:random_clay_with_dripleaves_feature"
     },
     "features": [
-      ["minecraft:clay_with_dripleaves_feature", 1],
-      ["minecraft:clay_pool_with_dripleaves_feature", 1]
+      [
+        "minecraft:clay_with_dripleaves_feature",
+        1
+      ],
+      [
+        "minecraft:clay_pool_with_dripleaves_feature",
+        1
+      ]
     ]
   }
 }

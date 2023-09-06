@@ -7,18 +7,26 @@
     "iterations": 64,
     "coordinate_eval_order": "zyx",
     "x": {
-      "extent": [ -8, 8 ],
+      "extent": [
+        -8,
+        8
+      ],
       "distribution": "triangle"
     },
     "y": {
-      "extent": [ -4, 4 ],
+      "extent": [
+        -4,
+        4
+      ],
       "distribution": "triangle"
     },
     "z": {
-      "extent": [ -8, 8 ],
+      "extent": [
+        -8,
+        8
+      ],
       "distribution": "triangle"
     },
-    
     "project_input_to_floor": false,
     "places_feature": "minecraft:nether_sprouts_feature"
   }

@@ -5,8 +5,14 @@
       "identifier": "minecraft:random_cherry_tree_feature"
     },
     "features": [
-      [ "minecraft:cherry_tree_feature", 19 ],
-      [ "minecraft:cherry_tree_with_beehive_feature", 1 ]
+      [
+        "minecraft:cherry_tree_feature",
+        19
+      ],
+      [
+        "minecraft:cherry_tree_with_beehive_feature",
+        1
+      ]
     ]
   }
 }

@@ -5,7 +5,7 @@
       "identifier": "minecraft:diamond_ore_buried_feature"
     },
     "count": 8,
-    "discard_chance_on_air_exposure": 1.0,
+    "discard_chance_on_air_exposure": 1,
     "replace_rules": [
       {
         "places_block": "minecraft:diamond_ore",

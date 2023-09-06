@@ -7,15 +7,24 @@
     "iterations": 23,
     "x": {
       "distribution": "triangle",
-      "extent": [ -3, 3 ]
+      "extent": [
+        -3,
+        3
+      ]
     },
     "y": {
       "distribution": "triangle",
-      "extent": [ -4, 4 ]
+      "extent": [
+        -4,
+        4
+      ]
     },
     "z": {
       "distribution": "triangle",
-      "extent": [ -3, 3 ]
+      "extent": [
+        -3,
+        3
+      ]
     },
     "coordinate_eval_order": "zyx",
     "places_feature": "minecraft:tall_grass_feature"

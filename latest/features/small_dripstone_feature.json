@@ -8,15 +8,24 @@
     "iterations": "Math.Random(1, 5)",
     "x": {
       "distribution": "gaussian",
-      "extent": [ -10, 10 ]
+      "extent": [
+        -10,
+        10
+      ]
     },
     "y": {
       "distribution": "gaussian",
-      "extent": [ -2, 2 ]
+      "extent": [
+        -2,
+        2
+      ]
     },
     "z": {
       "distribution": "gaussian",
-      "extent": [ -10, 10 ]
+      "extent": [
+        -10,
+        10
+      ]
     }
   }
 }

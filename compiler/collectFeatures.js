@@ -13,8 +13,6 @@ export class Feature {
     this.description = this.mountDescription();
 
     this.MDLink = this.mountMarkdownLink();
-
-    this.formatFeatureFile();
   }
 
   getFeatureType() {
@@ -36,11 +34,5 @@ export class Feature {
     const docs = JSON.parse(rawDocs);
 
     return docs[this.identifier] || '';
-  }
-
-  formatFeatureFile() {
-    const formattedJSON = JSON.stringify(this.data, null, 2);
-
-    fs.writeFileSync(this.path, formattedJSON, 'utf-8');
   }
 }

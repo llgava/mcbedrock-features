@@ -4,9 +4,21 @@
     "description": {
       "identifier": "minecraft:big_dripleaf_north_feature"
     },
-    "height_distribution":  [
-      [{"range_min": 1, "range_max": 6}, 2],
-      [{"range_min": 1, "range_max": 2}, 1]
+    "height_distribution": [
+      [
+        {
+          "range_min": 1,
+          "range_max": 6
+        },
+        2
+      ],
+      [
+        {
+          "range_min": 1,
+          "range_max": 2
+        },
+        1
+      ]
     ],
     "growth_direction": "UP",
     "body_blocks": [
@@ -17,7 +29,8 @@
             "big_dripleaf_head": false,
             "direction": 2
           }
-        }, 1
+        },
+        1
       ]
     ],
     "head_blocks": [
@@ -28,7 +41,8 @@
             "big_dripleaf_head": true,
             "direction": 2
           }
-        }, 1
+        },
+        1
       ]
     ],
     "allow_water": true
