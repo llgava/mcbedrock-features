@@ -9,4 +9,4 @@ const tableConfig = {
 
 await setupFeatures(table);
 
-const mk = markdownTable(table, tableConfig);
+const md = markdownTable(table, tableConfig);
