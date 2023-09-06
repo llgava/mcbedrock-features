@@ -1,4 +1,5 @@
 # 🌴 MCBedrock Features
+![Latest Version](https://img.shields.io/github/v/release/llgava/mcbedrock-features?logo=github&logoColor=959da5&labelColor=353c43&color=6CC644&label=Latest%20Version)
 
 Since Microsoft does not share the feature files easily, here you will find exactly all the features responsible for setting the world in Minecraft Bedrock Edition.
 
@@ -120,7 +121,7 @@ All features are saved according to the Major version of the game, that is, feat
 | [minecraft:random_cherry_tree_feature](latest/features/random_cherry_tree_feature.json)                                               |      1.20     |                              |
 
 ## Contributors
-<a href="https://github.com/llgava/neelix/graphs/contributors">
+<a href="https://github.com/llgava/mcbedrock-features/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=llgava/mcbedrock-features" />
 </a>
 
