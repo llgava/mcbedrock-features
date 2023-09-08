@@ -11,6 +11,9 @@ All features are saved according to the Major version of the game, that is, feat
 ## Vanilla Features
 %markdown_feature_table%
 
+> [!WARNING]
+> Features that are not listed here are hardcoded features, so there is no way to collect and modify them through a behavior pack.
+
 ## Contributors
 <a href="https://github.com/llgava/mcbedrock-features/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=llgava/mcbedrock-features" />
