@@ -1,0 +1,38 @@
+name: Build 🔨
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: windows-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - name: Checkout 🔃
+        uses: actions/checkout@v3
+
+      - name: Installing Node.js 🔨
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Installing dependencies 🔨
+        run: npm install
+
+      - name: Running build script 🔨
+        run: npm run build
+
+      - name: Commit updated README.md ⬆️
+        run: |
+          git config --local user.email "llgava@users.noreply.github.com"
+          git config --local user.name "llgava"
+          git add .
+          git commit -m "[skip ci] auto: build features table"
+          git push

@@ -1,0 +1,30 @@
+name: Lint 🧪
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: windows-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - name: Checkout 🔃
+        uses: actions/checkout@v3
+
+      - name: Installing Node.js 🔨
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Installing dependencies 🔨
+        run: npm install
+
+      - name: Running lint script 🧪
+        run: npm run lint
