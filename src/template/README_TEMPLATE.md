@@ -8,6 +8,8 @@ All features are saved according to the Major version of the game, that is, feat
 > [!NOTE]
 > There are many features to understand how it works, contributions to have a complete documentation are very welcome! <br /><br />Keep in mind that the description is about the feature and what it represents, if something is related to its feature rule, it should not be written.
 
+**Add Version** refers to when the feature file was added to vanilla behavior pack. Note that only the Major Version is used for versioning.
+
 ## Vanilla Features
 %markdown_feature_table%
 
