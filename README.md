@@ -1,5 +1,5 @@
 # 🌴 MCBedrock Features
-[![Build](https://github.com/llgava/mcbedrock-features/actions/workflows/build.yml/badge.svg)](https://github.com/llgava/mcbedrock-features/actions/workflows/build.yml) ![Latest Version](https://img.shields.io/github/v/release/llgava/mcbedrock-features?logo=github&logoColor=959da5&labelColor=353c43&color=6CC644&label=Latest%20Version)
+[![Build](https://github.com/llgava/mcbedrock-features/actions/workflows/build.yml/badge.svg)](https://github.com/llgava/mcbedrock-features/actions/workflows/build.yml) ![Latest Version](https://img.shields.io/github/v/release/llgava/mcbedrock-features?logo=github&logoColor=959DA5&labelColor=353C43&color=33B5E5&label=Latest%20Version)
 
 Since Microsoft does not share the feature files easily, here you will find exactly all the features responsible for setting the world in Minecraft Bedrock Edition.
 
