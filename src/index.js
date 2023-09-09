@@ -3,6 +3,7 @@ import path from 'path';
 import { markdownTable } from 'markdown-table';
 
 import { collectFeatures } from './collectFeatures.js';
+import { formatJSONFiles } from './formatter.js';
 
 const templateFilePath = path.join('src/template/README_TEMPLATE.md');
 const readmeFilePath = path.join('README.md');
@@ -14,6 +15,8 @@ const tableConfig = { align: ['l', 'c'] };
 
 async function main() {
   await collectFeatures(table);
+  await formatJSONFiles();
+
   table.unshift(tableHeader);
 
   const MDTable = markdownTable(table, tableConfig);
