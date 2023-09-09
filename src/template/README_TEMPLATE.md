@@ -12,7 +12,7 @@ All features are saved according to the Major version of the game, that is, feat
 %markdown_feature_table%
 
 ## Contributors
-<a href="https://github.com/llgava/mcbedrock-features/graphs/contributors">
+<a href="https://github.com/llgendmcbedrock-features/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=llgava/mcbedrock-features" />
 </a>
 
