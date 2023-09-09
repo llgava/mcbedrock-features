@@ -1,4 +1,5 @@
 import fs from 'fs';
+import JSON5 from 'json5';
 import { glob } from 'glob';
 
 const ignoredFiles = [
@@ -15,15 +16,10 @@ export async function formatJSONFiles() {
   files.sort((x, y) => x.localeCompare(y));
 
   files.forEach((file) => {
-    const content = fs.readFileSync(file, 'utf8');
-    const lines = content.split('\n');
-    const fixedContent = lines
-      .map((line, i) => {
-        if (i == lines.length - 1) return line;
-        return line + '\r';
-      })
-      .join('');
+    const rawData = fs.readFileSync(file, 'utf8');
+    const data = JSON5.parse(rawData);
 
-    fs.writeFileSync(file, fixedContent, 'utf8');
+    const formattedJSON = JSON.stringify(data, null, 2);
+    fs.writeFileSync(file, formattedJSON, { encoding: 'utf8' });
   });
 }
