@@ -1,5 +1,4 @@
 import fs from 'fs';
-import os from 'os';
 import { glob } from 'glob';
 
 const ignoredFiles = [
@@ -17,8 +16,14 @@ export async function formatJSONFiles() {
 
   files.forEach((file) => {
     const content = fs.readFileSync(file, 'utf8');
-    const lfToCRLF = content.replace(/\n/g, os.EOL);
+    const lines = content.split('\n');
+    const fixedContent = lines
+      .map((line, i) => {
+        if (i == lines.length - 1) return line;
+        return line + '\r';
+      })
+      .join('');
 
-    fs.writeFileSync(file, lfToCRLF, 'utf8');
+    fs.writeFileSync(file, fixedContent, 'utf8');
   });
 }

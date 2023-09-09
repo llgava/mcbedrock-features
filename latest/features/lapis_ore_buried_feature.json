@@ -1,28 +1,1 @@
-{
-  "format_version": "1.13.0",
-  "minecraft:ore_feature": {
-    "description": {
-      "identifier": "minecraft:lapis_ore_buried_feature"
-    },
-    "count": 7,
-    "discard_chance_on_air_exposure": 1,
-    "replace_rules": [
-      {
-        "places_block": "minecraft:lapis_ore",
-        "may_replace": [
-          {
-            "name": "minecraft:stone"
-          }
-        ]
-      },
-      {
-        "places_block": "minecraft:deepslate_lapis_ore",
-        "may_replace": [
-          {
-            "name": "minecraft:deepslate"
-          }
-        ]
-      }
-    ]
-  }
-}
+{  "format_version": "1.13.0",  "minecraft:ore_feature": {    "description": {      "identifier": "minecraft:lapis_ore_buried_feature"    },    "count": 7,    "discard_chance_on_air_exposure": 1,    "replace_rules": [      {        "places_block": "minecraft:lapis_ore",        "may_replace": [          {            "name": "minecraft:stone"          }        ]      },      {        "places_block": "minecraft:deepslate_lapis_ore",        "may_replace": [          {            "name": "minecraft:deepslate"          }        ]      }    ]  }}
