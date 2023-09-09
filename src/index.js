@@ -1,4 +1,4 @@
-import fs, { read } from 'fs';
+import fs from 'fs';
 import path from 'path';
 import { markdownTable } from 'markdown-table';
 
@@ -8,11 +8,9 @@ const templateFilePath = path.join('src/template/README_TEMPLATE.md');
 const readmeFilePath = path.join('README.md');
 
 // Configuratios
-const table = []
+const table = [];
 const tableHeader = ['Feature', 'Added Version', 'Description'];
-const tableConfig = {
-  align: ['l', 'c']
-}
+const tableConfig = { align: ['l', 'c'] };
 
 async function main() {
   await collectFeatures(table);

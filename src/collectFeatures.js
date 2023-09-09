@@ -4,16 +4,11 @@ import JSON5 from 'json5';
 
 import { Feature } from './feature.js';
 
-const ignoredFiles = [
-  "**/node_modules/**",
-  "**/feature_rules/*.json",
-  "docs.json",
-  "package.json"
-];
+const ignoredFiles = ['**/node_modules/**', '**/feature_rules/*.json', 'docs.json', 'package.json'];
 
 export async function collectFeatures(table) {
   const files = await glob('**/*.json', { ignore: ignoredFiles });
-  const addedFeatures = []
+  const addedFeatures = [];
 
   files.sort((x, y) => x.localeCompare(y));
 
@@ -29,11 +24,7 @@ export async function collectFeatures(table) {
     if (addedFeatures.includes(feature.identifier)) return;
 
     addedFeatures.push(feature.identifier);
-    table.push([
-      feature.MDLink,
-      feature.version,
-      feature.description
-    ]);
+    table.push([feature.MDLink, feature.version, feature.description]);
   });
 }
 

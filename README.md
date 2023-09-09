@@ -120,9 +120,6 @@ All features are saved according to the Major version of the game, that is, feat
 | [minecraft:pink_petals_scatter_feature](latest/features/pink_petals_scatter_feature.json)                                             |      1.20     |                                                                       |
 | [minecraft:random_cherry_tree_feature](latest/features/random_cherry_tree_feature.json)                                               |      1.20     |                                                                       |
 
-> [!WARNING]
-> Features that are not listed here are hardcoded features, so there is no way to collect and modify them through a behavior pack.
-
 ## Contributors
 <a href="https://github.com/llgava/mcbedrock-features/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=llgava/mcbedrock-features" />
