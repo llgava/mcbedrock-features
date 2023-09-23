@@ -18,7 +18,11 @@ async function main() {
   await formatJSONFiles();
 
   collectedFeatures.features.unshift(tableHeader);
-  const percentageCollected = (collectedFeatures.documented / collectedFeatures.features.length) * 100;
+  const percentageCollected = Math.round((collectedFeatures.documented / collectedFeatures.features.length) * 100);
+
+  console.log('Collected: ', collectedFeatures.documented);
+  console.log('Total:', collectedFeatures.features.length);
+  console.log('Collected percentage:', percentageCollected);
 
   const MDTable = markdownTable(collectedFeatures.features, tableConfig);
 

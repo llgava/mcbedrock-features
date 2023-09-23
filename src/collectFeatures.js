@@ -34,9 +34,7 @@ export async function collectFeatures(table) {
     addedFeatures.push(feature.identifier);
     table.push([feature.MDLink, feature.version, feature.description]);
 
-    if (feature.description.length > 0 || feature.description !== null) {
-      documentedFeatures++;
-    }
+    if (feature.description.length > 0) documentedFeatures++;
   });
 
   return {
