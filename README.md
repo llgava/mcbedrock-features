@@ -10,7 +10,8 @@ All features are saved according to the Major version of the game, that is, feat
 
 **Add Version** refers to when the feature file was added to vanilla behavior pack. Note that only the Major Version is used for versioning.
 
-## Vanilla Features • ![Documentation Status](https://progress-bar.dev/41/?title=Docs&scale=100&suffix=%&color=353C43)
+## Vanilla Features
+![Documentation Status](https://progress-bar.dev/41/?title=Docs&width=116&scale=100&suffix=%&color=353C43)
 
 | Feature                                                                                                                               | Added Version | Description                                                           |
 | :------------------------------------------------------------------------------------------------------------------------------------ | :-----------: | --------------------------------------------------------------------- |
