@@ -14,15 +14,18 @@ const tableHeader = ['Feature', 'Added Version', 'Description'];
 const tableConfig = { align: ['l', 'c'] };
 
 async function main() {
-  await collectFeatures(table);
+  const collectedFeatures = await collectFeatures(table);
   await formatJSONFiles();
 
-  table.unshift(tableHeader);
+  collectedFeatures.features.unshift(tableHeader);
+  const percentageCollected = (collectedFeatures.documented / collectedFeatures.features.length) * 100;
 
-  const MDTable = markdownTable(table, tableConfig);
+  const MDTable = markdownTable(collectedFeatures.features, tableConfig);
 
   const templateContent = fs.readFileSync(templateFilePath, 'utf-8');
-  const readmeContent = templateContent.replace('%markdown_feature_table%', MDTable);
+  const readmeContent = templateContent
+    .replace('%collected%', percentageCollected)
+    .replace('%markdown_feature_table%', MDTable);
 
   fs.writeFileSync(readmeFilePath, readmeContent);
 }
