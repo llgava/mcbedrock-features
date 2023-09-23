@@ -18,8 +18,7 @@ const ignoredFiles = [
 export async function collectFeatures(table) {
   const files = await glob('**/*.json', { ignore: ignoredFiles });
   const addedFeatures = [];
-  const documentedFeatures = 0;
-  const undocumentedFeatures = 0;
+  let documentedFeatures = 0;
 
   files.sort((x, y) => x.localeCompare(y));
 
@@ -35,9 +34,7 @@ export async function collectFeatures(table) {
     addedFeatures.push(feature.identifier);
     table.push([feature.MDLink, feature.version, feature.description]);
 
-    if (feature.description.length <= 0 || feature.description == null) {
-      undocumentedFeatures++;
-    } else {
+    if (feature.description.length > 0 || feature.description !== null) {
       documentedFeatures++;
     }
   });
@@ -45,6 +42,5 @@ export async function collectFeatures(table) {
   return {
     features: table,
     documented: documentedFeatures,
-    undocumented: undocumentedFeatures,
   };
 }
