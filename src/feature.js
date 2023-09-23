@@ -32,6 +32,11 @@ export class Feature {
   mountDescription() {
     const rawDocs = fs.readFileSync('./docs.json');
     const docs = JSON.parse(rawDocs);
+    let doc = docs[this.identifier] || '';
+
+    if (!doc.endsWith('.') && doc.length > 0) {
+      doc += '.';
+    }
 
     return docs[this.identifier] || '';
   }
