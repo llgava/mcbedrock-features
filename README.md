@@ -11,8 +11,6 @@ All features are saved according to the Major version of the game, that is, feat
 **Add Version** refers to when the feature file was added to vanilla behavior pack. Note that only the Major Version is used for versioning.
 
 ## Vanilla Features
-![Documentation Status](https://progress-bar.dev/99.08256880733946/?title=Docs&scale=100&suffix=%&color=353C43)
-
 | Feature                                                                                                                               | Added Version | Description                                                           |
 | :------------------------------------------------------------------------------------------------------------------------------------ | :-----------: | --------------------------------------------------------------------- |
 | [minecraft:amethyst_geode_feature](latest/features/amethyst_geode_feature.json)                                                       |      1.17     | Generates an amethyst geode.                                          |
