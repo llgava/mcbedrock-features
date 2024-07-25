@@ -11,6 +11,7 @@ const ignoredFiles = [
   'package.json',
   'package-lock.json',
   '.eslintrc.json',
+  '.gitkeep',
   '.prettierrc.json',
 ];
 
